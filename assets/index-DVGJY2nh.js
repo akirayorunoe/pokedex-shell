@@ -15750,13 +15750,13 @@ const remotesMap = {
 const {QueryClient,QueryClientProvider} = await importShared('@tanstack/react-query');
 
 const {Suspense,lazy} = await importShared('react');
-const {Routes,Route,BrowserRouter} = await importShared('react-router-dom');
+const {Routes,Route,HashRouter} = await importShared('react-router-dom');
 
 const PokeList = lazy(() => __vitePreload(() => import('./PokeList-DQ6xOiXh.js'),true?__vite__mapDeps([0,1,2]):void 0));
 const PokeDetail = lazy(() => __federation_method_getRemote("pokedex-detail" , "./PokeDetail").then(module=>__federation_method_wrapDefault(module, true)));
 const client = new QueryClient();
 function App() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(QueryClientProvider, { client, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Suspense, { fallback: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: "Loading..." }), children: /* @__PURE__ */ jsxRuntimeExports.jsx(BrowserRouter, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Routes, { children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(QueryClientProvider, { client, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Suspense, { fallback: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: "Loading..." }), children: /* @__PURE__ */ jsxRuntimeExports.jsx(HashRouter, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Routes, { children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/", element: /* @__PURE__ */ jsxRuntimeExports.jsx(PokeList, {}) }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/detail/:id", element: /* @__PURE__ */ jsxRuntimeExports.jsx(PokeDetail, {}) })
   ] }) }) }) });
