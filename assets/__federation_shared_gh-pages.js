@@ -1,4 +1,4 @@
-import { a as getAugmentedNamespace, c as commonjsGlobal, g as getDefaultExportFromCjs } from './_commonjsHelpers-E-ZsRS8r.js';
+import { a as getAugmentedNamespace, c as commonjsGlobal, g as getDefaultExportFromCjs } from './_commonjsHelpers.js';
 
 var lib$1 = {};
 

@@ -1,5 +1,5 @@
-import { g as getDefaultExportFromCjs } from './_commonjsHelpers-E-ZsRS8r.js';
-import { r as requireReactDom } from './index-brvGd106.js';
+import { g as getDefaultExportFromCjs } from './_commonjsHelpers.js';
+import { r as requireReactDom } from './index3.js';
 
 var reactDomExports = requireReactDom();
 const index = /*@__PURE__*/getDefaultExportFromCjs(reactDomExports);

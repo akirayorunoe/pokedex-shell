@@ -1,4 +1,4 @@
-import { i as importShared } from './_virtual___federation_fn_import-DkPSWypc.js';
+import { i as importShared } from './_virtual___federation_fn_import.js';
 
 const createStoreImpl = (createState) => {
   let state;

@@ -1,5 +1,5 @@
-import { i as importShared } from '../_virtual___federation_fn_import-DkPSWypc.js';
-import { j as jsxRuntimeExports } from '../jsx-runtime-XI9uIe3W.js';
+import { i as importShared } from '../_virtual___federation_fn_import.js';
+import { j as jsxRuntimeExports } from '../jsx-runtime.js';
 
 // src/subscribable.ts
 var Subscribable = class {

@@ -1,8 +1,8 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/PokeList-DQ6xOiXh.js","assets/_virtual___federation_fn_import-DkPSWypc.js","assets/jsx-runtime-XI9uIe3W.js"])))=>i.map(i=>d[i]);
-import { i as importShared } from './_virtual___federation_fn_import-DkPSWypc.js';
-import { j as jsxRuntimeExports } from './jsx-runtime-XI9uIe3W.js';
-import { r as requireReact } from './index-D9SXwo1H.js';
-import { r as requireReactDom } from './index-brvGd106.js';
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/PokeList.js","assets/_virtual___federation_fn_import.js","assets/jsx-runtime.js"])))=>i.map(i=>d[i]);
+import { i as importShared } from './_virtual___federation_fn_import.js';
+import { j as jsxRuntimeExports } from './jsx-runtime.js';
+import { r as requireReact } from './index2.js';
+import { r as requireReactDom } from './index3.js';
 
 true&&(function polyfill() {
   const relList = document.createElement("link").relList;
@@ -15698,7 +15698,7 @@ const remotesMap = {
 
                 const wrapShareModule = remoteFrom => {
                   return merge({
-                    'react':{'19.0.0':{get:()=>get(new URL('__federation_shared_react-DH43pKBw.js', import.meta.url).href), loaded:1}},'react-dom':{'19.0.0':{get:()=>get(new URL('__federation_shared_react-dom-B7djE2Bk.js', import.meta.url).href), loaded:1}},'@tanstack/react-query':{'5.66.9':{get:()=>get(new URL('__federation_shared_@tanstack/react-query-BJ0kZ_hC.js', import.meta.url).href), loaded:1}},'zustand':{'5.0.3':{get:()=>get(new URL('__federation_shared_zustand-CJ-Qfl6r.js', import.meta.url).href), loaded:1}},'react-router-dom':{'7.2.0':{get:()=>get(new URL('__federation_shared_react-router-dom-SialzoCX.js', import.meta.url).href), loaded:1}},'gh-pages':{'6.3.0':{get:()=>get(new URL('__federation_shared_gh-pages-8tbFOgCc.js', import.meta.url).href), loaded:1}}
+                    'react':{'19.0.0':{get:()=>get(new URL('__federation_shared_react.js', import.meta.url).href), loaded:1}},'react-dom':{'19.0.0':{get:()=>get(new URL('__federation_shared_react-dom.js', import.meta.url).href), loaded:1}},'@tanstack/react-query':{'5.66.9':{get:()=>get(new URL('__federation_shared_@tanstack/react-query.js', import.meta.url).href), loaded:1}},'zustand':{'5.0.3':{get:()=>get(new URL('__federation_shared_zustand.js', import.meta.url).href), loaded:1}},'react-router-dom':{'7.2.0':{get:()=>get(new URL('__federation_shared_react-router-dom.js', import.meta.url).href), loaded:1}},'gh-pages':{'6.3.0':{get:()=>get(new URL('__federation_shared_gh-pages.js', import.meta.url).href), loaded:1}}
                   }, (globalThis.__federation_shared__ || {})['default'] || {});
                 };
 
@@ -15752,7 +15752,7 @@ const {QueryClient,QueryClientProvider} = await importShared('@tanstack/react-qu
 const {Suspense,lazy} = await importShared('react');
 const {Routes,Route,HashRouter} = await importShared('react-router-dom');
 
-const PokeList = lazy(() => __vitePreload(() => import('./PokeList-DQ6xOiXh.js'),true?__vite__mapDeps([0,1,2]):void 0));
+const PokeList = lazy(() => __vitePreload(() => import('./PokeList.js'),true?__vite__mapDeps([0,1,2]):void 0));
 const PokeDetail = lazy(() => __federation_method_getRemote("pokedex-detail" , "./PokeDetail").then(module=>__federation_method_wrapDefault(module, true)));
 const client = new QueryClient();
 function App() {
