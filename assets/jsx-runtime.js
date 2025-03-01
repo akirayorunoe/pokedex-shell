@@ -1,8 +1,4 @@
-var jsxRuntime = {exports: {}};
-
-var reactJsxRuntime_production = {};
-
-/**
+var s={exports:{}},e={};/**
  * @license React
  * react-jsx-runtime.production.js
  *
@@ -10,50 +6,4 @@ var reactJsxRuntime_production = {};
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */
-
-var hasRequiredReactJsxRuntime_production;
-
-function requireReactJsxRuntime_production () {
-	if (hasRequiredReactJsxRuntime_production) return reactJsxRuntime_production;
-	hasRequiredReactJsxRuntime_production = 1;
-	var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"),
-	  REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
-	function jsxProd(type, config, maybeKey) {
-	  var key = null;
-	  void 0 !== maybeKey && (key = "" + maybeKey);
-	  void 0 !== config.key && (key = "" + config.key);
-	  if ("key" in config) {
-	    maybeKey = {};
-	    for (var propName in config)
-	      "key" !== propName && (maybeKey[propName] = config[propName]);
-	  } else maybeKey = config;
-	  config = maybeKey.ref;
-	  return {
-	    $$typeof: REACT_ELEMENT_TYPE,
-	    type: type,
-	    key: key,
-	    ref: void 0 !== config ? config : null,
-	    props: maybeKey
-	  };
-	}
-	reactJsxRuntime_production.Fragment = REACT_FRAGMENT_TYPE;
-	reactJsxRuntime_production.jsx = jsxProd;
-	reactJsxRuntime_production.jsxs = jsxProd;
-	return reactJsxRuntime_production;
-}
-
-var hasRequiredJsxRuntime;
-
-function requireJsxRuntime () {
-	if (hasRequiredJsxRuntime) return jsxRuntime.exports;
-	hasRequiredJsxRuntime = 1;
-	{
-	  jsxRuntime.exports = requireReactJsxRuntime_production();
-	}
-	return jsxRuntime.exports;
-}
-
-var jsxRuntimeExports = requireJsxRuntime();
-
-export { jsxRuntimeExports as j };
+ */var o;function d(){if(o)return e;o=1;var R=Symbol.for("react.transitional.element"),a=Symbol.for("react.fragment");function i(v,r,t){var u=null;if(t!==void 0&&(u=""+t),r.key!==void 0&&(u=""+r.key),"key"in r){t={};for(var n in r)n!=="key"&&(t[n]=r[n])}else t=r;return r=t.ref,{$$typeof:R,type:v,key:u,ref:r!==void 0?r:null,props:t}}return e.Fragment=a,e.jsx=i,e.jsxs=i,e}var x;function l(){return x||(x=1,s.exports=d()),s.exports}var p=l();export{p as j};
