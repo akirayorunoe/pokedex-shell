@@ -23,6 +23,7 @@ export default defineConfig({
         entryFileNames: 'assets/[name].js',
         chunkFileNames: 'assets/[name].js',
         assetFileNames: 'assets/[name].[ext]',
+        manualChunks: undefined, // Ngăn Rollup tạo file `__virtual__`
       },
     },
   },

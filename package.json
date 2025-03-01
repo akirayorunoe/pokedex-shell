@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "chmod +x rename.sh  && npm run build && ./rename.sh",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
