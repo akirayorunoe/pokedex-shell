@@ -10,7 +10,7 @@ export default defineConfig({
   federation({
     name: 'pokedex-shell',
     remotes: {
-      'pokedex-detail': 'http://localhost:4173/assets/remoteEntry.js'
+      'pokedex-detail': 'https://akirayorunoe.github.io/pokedex-detail/assets/remoteEntry.js'
     },
     shared: ['react', 'react-dom', '@tanstack/react-query', 'zustand', 'react-router-dom', 'gh-pages'],
   }),
