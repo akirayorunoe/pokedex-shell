@@ -15676,7 +15676,7 @@ const scriptRel = 'modulepreload';const assetsURL = function(dep) { return "/pok
 };
 
 const remotesMap = {
-'pokedex-detail':{url:'http://localhost:4173/assets/remoteEntry.js',format:'esm',from:'vite'}
+'pokedex-detail':{url:'https://akirayorunoe.github.io/pokedex-detail/assets/remoteEntry.js',format:'esm',from:'vite'}
 };
                 const currentImports = {};
 
