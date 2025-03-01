@@ -1,10 +1,11 @@
-import { useState } from "react"
+import { useNavigate } from 'react-router-dom';
 
 export default function Card({ data }) {
+    const navigate = useNavigate();
 
-    const [click, setClick] = useState(false)
+    const getPokeId = (url) => url.split("/").filter(Boolean).pop();
 
-    return <div className={`bg-[red]`} style={{ height: click ? '100px' : '50px' }} onClick={() => setClick(!click)}>
+    return <div className={`bg-[red]`} style={{ height: '50px' }} onClick={() => navigate(`/detail/${getPokeId(data?.url)}`)}>
         {data?.name}
     </div>
 }

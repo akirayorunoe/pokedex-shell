@@ -9,10 +9,14 @@ export default defineConfig({
   federation({
     name: 'pokedex-shell',
     remotes: {
-      remote: 'http://localhost:3001/assets/remoteEntry.js'
+      'pokedex-detail': 'http://localhost:4173/assets/remoteEntry.js'
     },
-    shared: ['react', 'react-dom', '@tanstack/react-query', 'zustand'],
+    shared: ['react', 'react-dom', '@tanstack/react-query', 'zustand', 'react-router-dom'],
   }),
   tailwindcss(),
   ],
+  build: {
+    target: "esnext",
+    minify: false,
+  },
 })
