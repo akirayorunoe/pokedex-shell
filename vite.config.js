@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/pokedex-shell',
+  base: '/pokedex-shell/',
   plugins: [react(),
   federation({
     name: 'pokedex-shell',
