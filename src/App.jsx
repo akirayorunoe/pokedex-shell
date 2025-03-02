@@ -12,7 +12,7 @@ function App() {
   return (
     <QueryClientProvider client={client}>
       <Suspense fallback={<div>Loading...</div>}>
-        <HashRouter basename='/pokedex-shell/'>
+        <HashRouter>
           <Routes>
             <Route path="/" element={<PokeList />} />
             <Route path="/detail/:id" element={<PokeDetail />} />
