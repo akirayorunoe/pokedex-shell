@@ -11,8 +11,10 @@ export default defineConfig({
     name: 'pokedex-shell',
     remotes: {
       'pokedex-detail': 'https://akirayorunoe.github.io/pokedex-detail/assets/remoteEntry.js'
+      // run build && npx vite preview o ca 2 repo cùng lúc
+      //'pokedex-detail': 'http://localhost:4173/pokedex-detail/assets/remoteEntry.js'
     },
-    shared: ['react', 'react-dom', '@tanstack/react-query', 'zustand', 'react-router-dom', 'gh-pages'],
+    shared: ['react', 'react-dom', '@tanstack/react-query', 'zustand', 'react-router-dom', 'gh-pages', '@reduxjs/toolkit', 'react-redux'],
   }),
   tailwindcss(),
   ],

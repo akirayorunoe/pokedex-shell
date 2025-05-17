@@ -36,7 +36,7 @@ const PokeList = () => {
     const virtualizer = useVirtualizer({
         count: hasNextPage ? pokemonsData.length + 1 : pokemonsData.length,
         estimateSize: () => 90,
-        getScrollElement: () => scrollRef.current
+        getScrollElement: () => scrollRef?.current
     })
 
     const virtualItems = virtualizer.getVirtualItems()
